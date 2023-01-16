@@ -1,0 +1,9 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: vault-ca-issuer
+  namespace: glueops-core-vault
+spec:
+  ca:
+    secretName: vault-ca-secret

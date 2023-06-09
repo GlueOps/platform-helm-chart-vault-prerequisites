@@ -2,4 +2,4 @@ apiVersion: v2
 appVersion: v0.1.0
 description: vault prerequisites before the official vault helm chart can be installed
 name: glueops-vault-prerequisites
-version: 0.2.0-alpha1
+version: 0.2.0-alpha2

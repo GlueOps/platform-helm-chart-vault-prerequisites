@@ -4,7 +4,7 @@ kind: Certificate
 metadata:
   name: vault-selfsigned-ca
   namespace: glueops-core-vault
-  annotation:
+  annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
   isCA: true
@@ -24,7 +24,7 @@ kind: Certificate
 metadata:
   name: vault-certificate
   namespace: glueops-core-vault
-  annotation:
+  annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   secretName: vault-tls

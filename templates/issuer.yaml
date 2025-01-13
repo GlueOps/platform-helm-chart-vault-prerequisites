@@ -4,6 +4,8 @@ kind: Issuer
 metadata:
   name: vault-ca-issuer
   namespace: glueops-core-vault
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   ca:
     secretName: vault-ca-secret

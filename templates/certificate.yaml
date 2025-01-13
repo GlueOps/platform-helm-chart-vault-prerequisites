@@ -6,6 +6,7 @@ metadata:
   namespace: glueops-core-vault
   annotations:
     argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   isCA: true
   commonName: Vault CA
